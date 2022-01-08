@@ -103,6 +103,7 @@ button:hover::after, button:focus::after{
     font-size: 25px;
     margin: 1rem auto;
     width: 500px;
+    height: 35px;
     background-color: white;
     margin-top: 2rem;
     padding: 10px 0 10px 0;
