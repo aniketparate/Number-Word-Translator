@@ -32,7 +32,7 @@ h1{
 }
 
 .container{
-    position: absolute;
+    position: fixed;
     left: 0%;
     right: 0%;
     top: 35%;
@@ -99,11 +99,12 @@ button:hover::after, button:focus::after{
 }
 
 .output{
+    display: block;
     text-align: center;
     font-size: 25px;
     margin: 1rem auto;
     width: 500px;
-    height: 35px;
+    height: fit-content;
     background-color: white;
     margin-top: 2rem;
     padding: 10px 0 10px 0;
@@ -111,7 +112,7 @@ button:hover::after, button:focus::after{
 }
 
 .footer{
-    position: absolute;
+    position: fixed;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -136,6 +137,11 @@ button:hover::after, button:focus::after{
 @media screen and (max-width: 540px) {
     body{
         overflow: hidden;
+    }
+
+    .container{
+        /* top: 37.25%; */
+        bottom: auto;
     }
 
     input{
